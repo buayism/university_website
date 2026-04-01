@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore research areas, publications, and ongoing projects at Bugema University. Faculty research areas in various disciplines.">
-    <title>Research & Publications - Bugema University</title>
+    <meta name="description"
+        content="Explore research areas, publications, and ongoing projects at Bugema University Department of Computing and Informatics. AI, Cybersecurity, Data Science, and Software Engineering research.">
+    <title>Research - Computing and Informatics</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <header>
         <nav class="main-nav" role="navigation" aria-label="Main navigation">
             <div class="logo">
                 <img src="logo.png" alt="Bugema University Logo">
                 <div class="logo-text">
                     <h1>Bugema University</h1>
-                    <span>Excellence in Service</span>
+                    <span>Department of Computing & Informatics</span>
                 </div>
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <svg class="icon icon-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="icon icon-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -29,20 +33,28 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="departments.html">Departments</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="staff.html">Staff</a></li>
                 <li><a href="research.html" class="active" aria-current="page">Research</a></li>
+                <li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content">
-        <section class="hero" role="banner">
+        <section class="hero research-hero" role="banner">
             <div class="hero-content">
-                <h2>Research & Publications</h2>
-                <p>Advancing knowledge through innovative research that addresses local and global challenges.</p>
+                <div class="hero-left">
+                    <h2><span class="hero-title-research">Research &</span><span class="hero-title-innovation">Innovation</span></h2>
+                    <div class="hero-buttons">
+                        <a href="#projects-heading" class="btn btn-primary">OUR PROJECTS</a>
+                        <a href="#collaboration-heading" class="btn btn-outline">COLLABORATE</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <img src="icdl.jpg" alt="Faculty and students at Bugema University ICDL certification event">
+                </div>
             </div>
         </section>
 
@@ -50,80 +62,101 @@
             <div class="container">
                 <div class="section-header">
                     <h2 id="areas-heading">Research Areas</h2>
-                    <p>Key research focus areas across our faculties</p>
+                    <p>Key research focus areas in computing and informatics</p>
                 </div>
                 <div class="card-grid">
                     <article class="card">
                         <div class="card-content">
                             <h3>
-                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 16v-4"></path>
+                                    <path d="M12 8h.01"></path>
                                 </svg>
-                                Sustainable Development
+                                Artificial Intelligence & Machine Learning
                             </h3>
-                            <p>Research on environmental sustainability, climate change adaptation, renewable energy, and sustainable agriculture practices in East Africa.</p>
+                            <p>Research on deep learning, natural language processing, computer vision, and AI
+                                applications in healthcare, agriculture, and education in Africa.</p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-content">
                             <h3>
-                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                                Cybersecurity & Information Security
+                            </h3>
+                            <p>Studies in network security, ethical hacking, digital forensics, cryptography, and
+                                cybersecurity frameworks for African contexts.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
                                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                                     <line x1="8" y1="21" x2="16" y2="21"></line>
                                     <line x1="12" y1="17" x2="12" y2="21"></line>
                                 </svg>
-                                Digital Innovation
+                                Data Science & Big Data Analytics
                             </h3>
-                            <p>Studies in artificial intelligence, cybersecurity, data science applications, blockchain technology, and digital transformation in Africa.</p>
+                            <p>Research on data mining, predictive analytics, big data technologies, and data-driven
+                                decision making for business and government.</p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-content">
                             <h3>
-                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
                                 </svg>
-                                Public Health
+                                Software Engineering & Systems
                             </h3>
-                            <p>Research on disease prevention, community health systems, maternal and child health, and healthcare delivery in resource-limited settings.</p>
+                            <p>Studies in software design, quality assurance, DevOps, cloud computing, distributed
+                                systems, and mobile application development.</p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-content">
                             <h3>
-                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
                                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                                 </svg>
-                                Education Innovation
+                                Human-Computer Interaction
                             </h3>
-                            <p>Studies on curriculum development, educational technology, teacher training effectiveness, and inclusive education practices.</p>
+                            <p>Research on user experience design, accessibility, interaction design for African users,
+                                and technology adoption in developing contexts.</p>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-content">
                             <h3>
-                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                </svg>
-                                Economic Development
-                            </h3>
-                            <p>Research on entrepreneurship, SME development, financial inclusion, and economic policy in developing economies.</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card-content">
-                            <h3>
-                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
                                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="9" cy="7" r="4"></circle>
                                     <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                                 </svg>
-                                Social Development
+                                Computing Education
                             </h3>
-                            <p>Studies on community development, social welfare, gender equity, youth empowerment, and social justice.</p>
+                            <p>Studies on effective pedagogy in computing, curriculum development, online learning, and
+                                increasing diversity in tech education.</p>
                         </div>
                     </article>
                 </div>
@@ -135,26 +168,34 @@
                 <div class="section-header">
                     <h2 id="publications-heading">Recent Publications</h2>
                 </div>
-                
+
                 <div class="research-area">
                     <h3>
-                                <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <path d="M10 2v7.31M14 9.3V1.99M8.5 2h7M14 9.3h-4.05a.95.95 0 0 0-.95 1.05 3 3 0 0 0 1.35 2.5l.95.63a3 3 0 0 1 1.35 2.5v3.55a.95.95 0 0 1-.95.95h-4.1a.95.95 0 0 1-.95-.95V15.5a3 3 0 0 1 1.35-2.5l.95-.63a3 3 0 0 0 1.35-2.5"/>
-                                    <path d="M7 21h10"/>
-                                </svg>
-                                Business & Economics
-                            </h3>
+                        <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="vertical-align: middle; margin-right: 0.5rem;">
+                            <path
+                                d="M10 2v7.31M14 9.3V1.99M8.5 2h7M14 9.3h-4.05a.95.95 0 0 0-.95 1.05 3 3 0 0 0 1.35 2.5l.95.63a3 3 0 0 1 1.35 2.5v3.55a.95.95 0 0 1-.95.95h-4.1a.95.95 0 0 1-.95-.95V15.5a3 3 0 0 1 1.35-2.5l.95-.63a3 3 0 0 0 1.35-2.5" />
+                            <path d="M7 21h10" />
+                        </svg>
+                        Business & Economics
+                    </h3>
                     <ul class="publication-list">
                         <li>
-                            <p class="publication-title">"Financial Inclusion and SME Growth in East Africa: Evidence from Uganda"</p>
-                            <p class="publication-meta">Dr. Robert Mukasa, Prof. John K. Ssebuwufu | African Journal of Business Management, 2026</p>
+                            <p class="publication-title">"Financial Inclusion and SME Growth in East Africa: Evidence
+                                from Uganda"</p>
+                            <p class="publication-meta">Dr. Robert Mukasa, Prof. John K. Ssebuwufu | African Journal of
+                                Business Management, 2026</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Digital Marketing Strategies for African SMEs in the Post-Pandemic Era"</p>
-                            <p class="publication-meta">Dr. Michael Okello | International Journal of Marketing Studies, 2025</p>
+                            <p class="publication-title">"Digital Marketing Strategies for African SMEs in the
+                                Post-Pandemic Era"</p>
+                            <p class="publication-meta">Dr. Michael Okello | International Journal of Marketing Studies,
+                                2025</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Corporate Governance Practices in Ugandan Banks: A Comparative Analysis"</p>
+                            <p class="publication-title">"Corporate Governance Practices in Ugandan Banks: A Comparative
+                                Analysis"</p>
                             <p class="publication-meta">Prof. John K. Ssebuwufu | Journal of African Business, 2025</p>
                         </li>
                     </ul>
@@ -162,72 +203,96 @@
 
                 <div class="research-area">
                     <h3>
-                                <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                                    <line x1="12" y1="17" x2="12" y2="21"></line>
-                                </svg>
-                                Technology & Computing
-                            </h3>
+                        <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="vertical-align: middle; margin-right: 0.5rem;">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        Technology & Computing
+                    </h3>
                     <ul class="publication-list">
                         <li>
-                            <p class="publication-title">"Machine Learning Applications for Disease Prediction in Low-Resource Settings"</p>
-                            <p class="publication-meta">Dr. Grace Achieng | Journal of Health Informatics in Africa, 2026</p>
+                            <p class="publication-title">"Machine Learning Applications for Disease Prediction in
+                                Low-Resource Settings"</p>
+                            <p class="publication-meta">Dr. Grace Achieng | Journal of Health Informatics in Africa,
+                                2026</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Blockchain Technology for Transparent Governance in Developing Countries"</p>
-                            <p class="publication-meta">Dr. Jane Birungi | International Journal of Information Technology, 2025</p>
+                            <p class="publication-title">"Blockchain Technology for Transparent Governance in Developing
+                                Countries"</p>
+                            <p class="publication-meta">Dr. Jane Birungi | International Journal of Information
+                                Technology, 2025</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Cybersecurity Challenges Facing African SMEs: A Case Study Approach"</p>
-                            <p class="publication-meta">Dr. Jane Birungi, Dr. Grace Achieng | African Journal of Computing, 2025</p>
+                            <p class="publication-title">"Cybersecurity Challenges Facing African SMEs: A Case Study
+                                Approach"</p>
+                            <p class="publication-meta">Dr. Jane Birungi, Dr. Grace Achieng | African Journal of
+                                Computing, 2025</p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="research-area">
                     <h3>
-                                <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <path d="M10 2v7.31M14 9.3V1.99M8.5 2h7M14 9.3h-4.05a.95.95 0 0 0-.95 1.05 3 3 0 0 0 1.35 2.5l.95.63a3 3 0 0 1 1.35 2.5v3.55a.95.95 0 0 1-.95.95h-4.1a.95.95 0 0 1-.95-.95V15.5a3 3 0 0 1 1.35-2.5l.95-.63a3 3 0 0 0 1.35-2.5"/>
-                                    <path d="M7 21h10"/>
-                                </svg>
-                                Science & Environment
-                            </h3>
+                        <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="vertical-align: middle; margin-right: 0.5rem;">
+                            <path
+                                d="M10 2v7.31M14 9.3V1.99M8.5 2h7M14 9.3h-4.05a.95.95 0 0 0-.95 1.05 3 3 0 0 0 1.35 2.5l.95.63a3 3 0 0 1 1.35 2.5v3.55a.95.95 0 0 1-.95.95h-4.1a.95.95 0 0 1-.95-.95V15.5a3 3 0 0 1 1.35-2.5l.95-.63a3 3 0 0 0 1.35-2.5" />
+                            <path d="M7 21h10" />
+                        </svg>
+                        Science & Environment
+                    </h3>
                     <ul class="publication-list">
                         <li>
-                            <p class="publication-title">"Climate Change Adaptation Strategies among Ugandan Smallholder Farmers"</p>
-                            <p class="publication-meta">Dr. Charles Ssekandi, Prof. Peter Otim | Journal of Environmental Science, 2026</p>
+                            <p class="publication-title">"Climate Change Adaptation Strategies among Ugandan Smallholder
+                                Farmers"</p>
+                            <p class="publication-meta">Dr. Charles Ssekandi, Prof. Peter Otim | Journal of
+                                Environmental Science, 2026</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Phytochemical Analysis of Medicinal Plants from Western Uganda"</p>
-                            <p class="publication-meta">Prof. Peter Otim | African Journal of Traditional Medicine, 2025</p>
+                            <p class="publication-title">"Phytochemical Analysis of Medicinal Plants from Western
+                                Uganda"</p>
+                            <p class="publication-meta">Prof. Peter Otim | African Journal of Traditional Medicine, 2025
+                            </p>
                         </li>
                         <li>
-                            <p class="publication-title">"Sustainable Water Management Practices in Rural Communities"</p>
-                            <p class="publication-meta">Dr. Charles Ssekandi | Water Resources Management Journal, 2025</p>
+                            <p class="publication-title">"Sustainable Water Management Practices in Rural Communities"
+                            </p>
+                            <p class="publication-meta">Dr. Charles Ssekandi | Water Resources Management Journal, 2025
+                            </p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="research-area">
                     <h3>
-                                <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                                </svg>
-                                Education & Social Sciences
-                            </h3>
+                        <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="vertical-align: middle; margin-right: 0.5rem;">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        Education & Social Sciences
+                    </h3>
                     <ul class="publication-list">
                         <li>
-                            <p class="publication-title">"Effectiveness of Online Learning in Ugandan Universities During COVID-19"</p>
-                            <p class="publication-meta">Dr. Esther Nakato, Prof. David Musoke | Journal of Education in Emerging Africa, 2026</p>
+                            <p class="publication-title">"Effectiveness of Online Learning in Ugandan Universities
+                                During COVID-19"</p>
+                            <p class="publication-meta">Dr. Esther Nakato, Prof. David Musoke | Journal of Education in
+                                Emerging Africa, 2026</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Inclusive Education Practices in Resource-Limited Settings"</p>
-                            <p class="publication-meta">Prof. David Musoke | International Journal of Special Education, 2025</p>
+                            <p class="publication-title">"Inclusive Education Practices in Resource-Limited Settings"
+                            </p>
+                            <p class="publication-meta">Prof. David Musoke | International Journal of Special Education,
+                                2025</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Youth Unemployment and Entrepreneurship Education in Uganda"</p>
+                            <p class="publication-title">"Youth Unemployment and Entrepreneurship Education in Uganda"
+                            </p>
                             <p class="publication-meta">Dr. Mary Nankinga | Journal of African Development, 2025</p>
                         </li>
                     </ul>
@@ -235,22 +300,28 @@
 
                 <div class="research-area">
                     <h3>
-                                <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.5rem;">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                </svg>
-                                Health Sciences
-                            </h3>
+                        <svg class="icon icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="vertical-align: middle; margin-right: 0.5rem;">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                        Health Sciences
+                    </h3>
                     <ul class="publication-list">
                         <li>
-                            <p class="publication-title">"Maternal Health Outcomes in Rural Uganda: A Community-Based Intervention Study"</p>
-                            <p class="publication-meta">Dr. Catherine Nambi, Dr. James Mbabazi | Maternal and Child Health Journal, 2026</p>
+                            <p class="publication-title">"Maternal Health Outcomes in Rural Uganda: A Community-Based
+                                Intervention Study"</p>
+                            <p class="publication-meta">Dr. Catherine Nambi, Dr. James Mbabazi | Maternal and Child
+                                Health Journal, 2026</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Community Health Worker Effectiveness in Disease Prevention Programs"</p>
+                            <p class="publication-title">"Community Health Worker Effectiveness in Disease Prevention
+                                Programs"</p>
                             <p class="publication-meta">Dr. James Mbabazi | Global Health Action, 2025</p>
                         </li>
                         <li>
-                            <p class="publication-title">"Nursing Education and Practice in East Africa: Current Challenges and Opportunities"</p>
+                            <p class="publication-title">"Nursing Education and Practice in East Africa: Current
+                                Challenges and Opportunities"</p>
                             <p class="publication-meta">Dr. Catherine Nambi | International Nursing Review, 2025</p>
                         </li>
                     </ul>
@@ -268,7 +339,8 @@
                         <div class="card-content">
                             <h3>AI for Healthcare in Africa</h3>
                             <p><strong>Duration:</strong> 2024-2027</p>
-                            <p>Developing AI-driven diagnostic tools for rural healthcare facilities. Funded by the African Innovation Foundation.</p>
+                            <p>Developing AI-driven diagnostic tools for rural healthcare facilities. Funded by the
+                                African Innovation Foundation.</p>
                             <p><strong>Lead:</strong> Dr. Grace Achieng (Computing) & Dr. James Mbabazi (Health)</p>
                         </div>
                     </article>
@@ -276,7 +348,8 @@
                         <div class="card-content">
                             <h3>Sustainable Agriculture Initiative</h3>
                             <p><strong>Duration:</strong> 2025-2028</p>
-                            <p>Research on climate-smart agriculture practices for smallholder farmers in Uganda. Partnership with Ministry of Agriculture.</p>
+                            <p>Research on climate-smart agriculture practices for smallholder farmers in Uganda.
+                                Partnership with Ministry of Agriculture.</p>
                             <p><strong>Lead:</strong> Dr. Charles Ssekandi (Science)</p>
                         </div>
                     </article>
@@ -284,7 +357,8 @@
                         <div class="card-content">
                             <h3>Digital Financial Inclusion Study</h3>
                             <p><strong>Duration:</strong> 2025-2027</p>
-                            <p>Examining mobile money adoption and financial literacy in rural communities. Collaboration with Financial Sector Deepening Uganda.</p>
+                            <p>Examining mobile money adoption and financial literacy in rural communities.
+                                Collaboration with Financial Sector Deepening Uganda.</p>
                             <p><strong>Lead:</strong> Dr. Robert Mukasa (Business)</p>
                         </div>
                     </article>
@@ -292,7 +366,8 @@
                         <div class="card-content">
                             <h3>Teacher Professional Development Program</h3>
                             <p><strong>Duration:</strong> 2024-2026</p>
-                            <p>Evaluating effective models for in-service teacher training in East Africa. Supported by UNESCO.</p>
+                            <p>Evaluating effective models for in-service teacher training in East Africa. Supported by
+                                UNESCO.</p>
                             <p><strong>Lead:</strong> Dr. Esther Nakato (Education)</p>
                         </div>
                     </article>
@@ -308,7 +383,8 @@
                 <div class="about-content">
                     <div class="about-text">
                         <h3>Partner With Us</h3>
-                        <p>Bugema University welcomes research collaborations with institutions, organizations, and researchers worldwide. We offer:</p>
+                        <p>Bugema University welcomes research collaborations with institutions, organizations, and
+                            researchers worldwide. We offer:</p>
                         <ul style="margin: 1rem 0 1rem 1.5rem;">
                             <li>Joint research projects and publications</li>
                             <li>Student and faculty exchange programs</li>
@@ -320,7 +396,8 @@
                         <a href="contact.html" class="btn btn-primary">Contact Research Office</a>
                     </div>
                     <div class="icon-container-about" aria-hidden="true">
-                        <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
                             <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -339,32 +416,33 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="departments.html">Departments</a></li>
                         <li><a href="programs.html">Programs</a></li>
                         <li><a href="staff.html">Staff</a></li>
+                        <li><a href="research.html">Research</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="research.html">Research</a></li>
                         <li><a href="news.html">News & Events</a></li>
-                        <li><a href="#">Library</a></li>
                         <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">E-Learning</a></li>
+                        <li><a href="#">Library</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li>P.O. Box 6529, Kampala, Uganda</li>
-                        <li>Email: info@bugema.ac.ug</li>
-                        <li>Phone: +256 312 351 400</li>
+                        <li>Department of Computing and Informatics</li>
+                        <li>Bugema University, P.O. Box 6529</li>
+                        <li>Kampala, Uganda</li>
+                        <li>Email: computing@bugema.ac.ug</li>
                         <li><a href="contact.html">Full Contact Details →</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Bugema University. All rights reserved. | Excellence in Service</p>
+                <p>&copy; 2026 Bugema University. Department of Computing and Informatics. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -372,7 +450,7 @@
     <script>
         const menuToggle = document.querySelector('.mobile-menu-toggle');
         const navLinks = document.querySelector('.nav-links');
-        
+
         menuToggle.addEventListener('click', () => {
             const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
             menuToggle.setAttribute('aria-expanded', !isExpanded);
@@ -382,7 +460,7 @@
         // Navbar scroll behavior - add solid background when scrolled past hero
         const header = document.querySelector('header');
         const hero = document.querySelector('.hero');
-        
+
         function updateNavbar() {
             const heroBottom = hero.getBoundingClientRect().bottom;
             if (heroBottom <= 0) {
@@ -391,14 +469,14 @@
                 header.classList.remove('scrolled');
             }
         }
-        
+
         window.addEventListener('scroll', updateNavbar);
         // Initial check
         updateNavbar();
 
         // Scroll to top button functionality
         const scrollToTopBtn = document.querySelector('.scroll-to-top');
-        
+
         function toggleScrollToTop() {
             if (window.scrollY > 300) {
                 scrollToTopBtn.classList.add('visible');
@@ -406,9 +484,9 @@
                 scrollToTopBtn.classList.remove('visible');
             }
         }
-        
+
         window.addEventListener('scroll', toggleScrollToTop);
-        
+
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -418,9 +496,11 @@
     </script>
 
     <button class="scroll-to-top" aria-label="Scroll to top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>
 </body>
+
 </html>

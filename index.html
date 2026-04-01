@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bugema University Faculty Website - Excellence in Service since 1948. Offering quality education in various departments and programs.">
-    <title>Bugema University - Home</title>
+    <meta name="description"
+        content="Bugema University Department of Computing and Informatics - Leading technology education with cutting-edge programs in Computer Science, Software Engineering, and Information Technology.">
+    <title>Department of Computing and Informatics - Bugema University</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS for the updated 'Ready to Join Us?' section */
+        .cta-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .cta-image {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .cta-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            /* Optional: adds rounded corners to the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Optional: adds a subtle shadow */
+        }
+
+        .cta-text-content {
+            flex: 1;
+            text-align: left;
+            /* Align text to the left within its container */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .cta-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta-image {
+                max-width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            .cta-text-content {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <header>
         <nav class="main-nav" role="navigation" aria-label="Main navigation">
             <div class="logo">
                 <img src="logo.png" alt="Bugema University Logo">
                 <div class="logo-text">
                     <h1>Bugema University</h1>
-                    <span>Excellence in Service</span>
+                    <span>Department of Computing & Informatics</span>
                 </div>
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <svg class="icon icon-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="icon icon-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -29,23 +81,27 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="departments.html">Departments</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="staff.html">Staff</a></li>
                 <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content">
-        <section class="hero" role="banner">
+        <section class="hero home-hero" role="banner">
             <div class="hero-content">
-                <h2>Welcome to Bugema University</h2>
-                <p>Train the head, hand and heart since 1948.</p>
-                <div class="hero-cta">
-                    <a href="programs.html" class="btn btn-primary">Explore Programs</a>
-                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                <div class="hero-left">
+                    <h2><span class="hero-title-welcome">Welcome to</span><span class="hero-title-dept">Computing</span></h2>
+                    <div class="hero-buttons">
+                        <a href="programs.html" class="btn btn-primary">EXPLORE PROGRAMS</a>
+                        <a href="about.html" class="btn btn-outline">LEARN MORE</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <img src="icdl.jpg" alt="Department of Computing and Informatics staff group photo at Bugema University">
                 </div>
             </div>
         </section>
@@ -58,7 +114,7 @@
                 </div>
                 <div class="quick-links">
                     <div class="quick-link-item">
-                        <h4>About the Faculty</h4>
+                        <h4>About the Department</h4>
                         <p>Learn about our history, mission, and leadership.</p>
                         <a href="about.html">Read More →</a>
                     </div>
@@ -68,8 +124,8 @@
                         <a href="programs.html">View Programs →</a>
                     </div>
                     <div class="quick-link-item">
-                        <h4>Research & Publications</h4>
-                        <p>Discover our research areas and academic output.</p>
+                        <h4>Research & Innovation</h4>
+                        <p>Discover our research areas and innovations.</p>
                         <a href="research.html">Explore Research →</a>
                     </div>
                     <div class="quick-link-item">
@@ -81,71 +137,72 @@
             </div>
         </section>
 
-        <section class="section section-alt" aria-labelledby="departments-heading">
+        <section class="section section-alt" aria-labelledby="programs-heading">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="departments-heading">Our Departments</h2>
-                    <p>Seven schools offering diverse academic programs</p>
+                    <h2 id="programs-heading">Our Programs</h2>
+                    <p>Cutting-edge technology education for the digital age</p>
                 </div>
                 <div class="card-grid">
                     <article class="card">
                         <div class="card-image">
-                            <img src="dept_business.png" alt="Ugandan shillings and business finance materials representing the School of Business">
+                            <img src="dept_computing.png" alt="Computer Science Program">
                         </div>
                         <div class="card-content">
-                            <h3>School of Business</h3>
-                            <p>Comprehensive business education preparing future leaders and entrepreneurs.</p>
-                            <a href="departments.html#business" class="card-link">Learn More →</a>
+                            <h3>BSc Computer Science</h3>
+                            <p>Comprehensive computer science education covering programming, algorithms, AI, and
+                                cybersecurity.</p>
+                            <a href="programs.html#bsc-cs" class="card-link">Learn More →</a>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-image">
-                            <img src="dept_computing.png" alt="Computer monitors displaying code representing the School of Computing and Informatics">
+                            <img src="dept_computing.png" alt="Software Engineering Program">
                         </div>
                         <div class="card-content">
-                            <h3>School of Computing & Informatics</h3>
-                            <p>Cutting-edge technology education for the digital age.</p>
-                            <a href="departments.html#computing" class="card-link">Learn More →</a>
+                            <h3>BSc Software Engineering</h3>
+                            <p>Master software design, development, testing, and project management.</p>
+                            <a href="programs.html#bsc-se" class="card-link">Learn More →</a>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-image">
-                            <img src="dept_science.png" alt="Laboratory beakers and microscope representing the School of Science and Technology">
+                            <img src="dept_computing.png" alt="Information Technology Program">
                         </div>
                         <div class="card-content">
-                            <h3>School of Science & Technology</h3>
-                            <p>Research-driven education in natural and applied sciences.</p>
-                            <a href="departments.html#science" class="card-link">Learn More →</a>
+                            <h3>BSc Information Technology</h3>
+                            <p>Practical IT skills for network management, databases, and system administration.</p>
+                            <a href="programs.html#bsc-it" class="card-link">Learn More →</a>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-image">
-                            <img src="dept_education.png" alt="Classroom with textbooks and chalkboard representing the School of Education">
+                            <img src="dept_computing.png" alt="Data Science Program">
                         </div>
                         <div class="card-content">
-                            <h3>School of Education</h3>
-                            <p>Training the next generation of educators and administrators.</p>
-                            <a href="departments.html#education" class="card-link">Learn More →</a>
+                            <h3>BSc Data Science</h3>
+                            <p>Learn data analysis, machine learning, and big data technologies.</p>
+                            <a href="programs.html#bsc-ds" class="card-link">Learn More →</a>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-image">
-                            <img src="dept_health.png" alt="Stethoscope and medical equipment representing the School of Health Sciences">
+                            <img src="dept_computing.png" alt="Cybersecurity Program">
                         </div>
                         <div class="card-content">
-                            <h3>School of Health Sciences</h3>
-                            <p>Preparing healthcare professionals with excellence in service.</p>
-                            <a href="departments.html#health" class="card-link">Learn More →</a>
+                            <h3>BSc Cybersecurity</h3>
+                            <p>Protect digital assets with advanced security and ethical hacking skills.</p>
+                            <a href="programs.html#bsc-cyber" class="card-link">Learn More →</a>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card-image">
-                            <img src="dept_social.png" alt="Globe and humanities books representing the School of Social Sciences">
+                            <img src="dept_computing.png" alt="MSc Computer Science Program">
                         </div>
                         <div class="card-content">
-                            <h3>School of Social Sciences</h3>
-                            <p>Understanding society through humanities and social research.</p>
-                            <a href="departments.html#social" class="card-link">Learn More →</a>
+                            <h3>MSc Computer Science</h3>
+                            <p>Advanced research and specialization for computing professionals.</p>
+                            <a href="programs.html#msc-cs" class="card-link">Learn More →</a>
                         </div>
                     </article>
                 </div>
@@ -155,69 +212,175 @@
         <section class="section" aria-labelledby="stats-heading">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="stats-heading">University at a Glance</h2>
-                    <p>Our commitment to excellence in numbers</p>
+                    <h2 id="stats-heading">Department at a Glance</h2>
+                    <p>Our commitment to computing excellence in numbers</p>
                 </div>
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <div class="stat-number" data-target="75" data-suffix="+">0+</div>
+                        <div class="stat-number" data-target="25" data-suffix="+">0+</div>
                         <div class="stat-label">Years of Excellence</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number" data-target="50" data-suffix="+">0+</div>
-                        <div class="stat-label">Academic Programs</div>
+                        <div class="stat-number" data-target="6" data-suffix="">0</div>
+                        <div class="stat-label">Degree Programs</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number" data-target="150" data-suffix="+">0+</div>
-                        <div class="stat-label">Qualified Staff</div>
+                        <div class="stat-number" data-target="25" data-suffix="+">0+</div>
+                        <div class="stat-label">Qualified Faculty</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number" data-target="5000" data-suffix="+">0+</div>
+                        <div class="stat-number" data-target="800" data-suffix="+">0+</div>
                         <div class="stat-label">Students Enrolled</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number" data-target="7" data-suffix="">0</div>
-                        <div class="stat-label">Schools</div>
+                        <div class="stat-number" data-target="5" data-suffix="">0</div>
+                        <div class="stat-label">Research Labs</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section-alt" aria-labelledby="news-heading">
+        <section class="section section-alt" aria-labelledby="why-computing-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="why-computing-heading">Why Study Computing at Bugema?</h2>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                                Modern Computer Labs
+                            </h3>
+                            <p>State-of-the-art computer laboratories with high-performance workstations, latest
+                                software, and 24/7 access.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                                Industry Partnerships
+                            </h3>
+                            <p>Strong connections with tech companies providing internships, guest lectures, and job
+                                placements.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 16v-4"></path>
+                                    <path d="M12 8h.01"></path>
+                                </svg>
+                                Expert Faculty
+                            </h3>
+                            <p>Learn from experienced professors and industry professionals with advanced degrees and
+                                certifications.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                                Innovation & Research
+                            </h3>
+                            <p>Engage in cutting-edge research in AI, cybersecurity, data science, and software
+                                engineering.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                Student Communities
+                            </h3>
+                            <p>Join coding clubs, hackathons, and tech communities to enhance your skills and network.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-content">
+                            <h3>
+                                <svg class="icon icon-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="vertical-align: middle; margin-right: 0.5rem;">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                                ICDL Certification
+                            </h3>
+                            <p>Opportunity to earn internationally recognized ICDL certifications alongside your degree.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="news-heading">
             <div class="container">
                 <div class="section-header">
                     <h2 id="news-heading">Latest News</h2>
-                    <p>Stay informed with the latest from Bugema University</p>
+                    <p>Stay informed with the latest from the Department</p>
                 </div>
                 <div class="news-grid">
                     <article class="news-item">
                         <div class="news-image" aria-hidden="true">
-                            <svg class="icon icon-lg icon-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10 9 9 9 8 9"></polyline>
+                            <svg class="icon icon-lg icon-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
                             </svg>
                         </div>
                         <div class="news-content">
                             <div class="news-date">March 15, 2026</div>
-                            <h3>Admission Open for 2026 Academic Year</h3>
-                            <p>Applications are now being accepted for undergraduate and postgraduate programs. Deadline for applications is April 30, 2026.</p>
+                            <h3>New AI Research Lab Launched</h3>
+                            <p>The Department has launched a state-of-the-art AI and Machine Learning research
+                                laboratory equipped with GPU workstations.</p>
                             <a href="news.html" class="card-link">Read More →</a>
                         </div>
                     </article>
                     <article class="news-item">
                         <div class="news-image" aria-hidden="true">
-                            <svg class="icon icon-lg icon-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="icon icon-lg icon-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="8" r="7"></circle>
                                 <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                             </svg>
                         </div>
                         <div class="news-content">
                             <div class="news-date">March 10, 2026</div>
-                            <h3>Faculty Wins Research Excellence Award</h3>
-                            <p>Our research team has been recognized for outstanding contributions to sustainable development studies in East Africa.</p>
+                            <h3>Students Win National Hackathon</h3>
+                            <p>Our computer science students secured first place in the National Inter-University
+                                Hackathon competition.</p>
                             <a href="news.html" class="card-link">Read More →</a>
                         </div>
                     </article>
@@ -226,14 +389,16 @@
         </section>
 
         <section class="section" aria-labelledby="cta-heading">
-            <div class="container">
-                <div class="section-header">
-                    <h2 id="cta-heading">Ready to Join Us?</h2>
-                    <p>Take the first step towards your academic journey</p>
+            <div class="container cta-container">
+                <div class="cta-image">
+                    <img src="icdl.jpg" alt="Students in a computer laboratory at Bugema University">
                 </div>
-                <div style="text-align: center;">
-                    <a href="contact.html" class="btn btn-primary" style="margin-right: 1rem;">Contact Admissions</a>
-                    <a href="programs.html" class="btn btn-accent">Apply Now</a>
+                <div class="cta-text-content">
+                    <h2 id="cta-heading">Ready to Start Your Tech Journey?</h2>
+                    <p>Join the next generation of computing professionals</p>
+                    <div>
+                        <a href="contact.html" class="btn btn-primary">Contact Admissions</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -246,42 +411,43 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="departments.html">Departments</a></li>
                         <li><a href="programs.html">Programs</a></li>
                         <li><a href="staff.html">Staff</a></li>
+                        <li><a href="research.html">Research</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="research.html">Research</a></li>
                         <li><a href="news.html">News & Events</a></li>
-                        <li><a href="#">Library</a></li>
                         <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">E-Learning</a></li>
+                        <li><a href="#">Library</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li>P.O. Box 6529, Kampala, Uganda</li>
-                        <li>Email: info@bugema.ac.ug</li>
-                        <li>Phone: +256 312 351 400</li>
+                        <li>Department of Computing and Informatics</li>
+                        <li>Bugema University, P.O. Box 6529</li>
+                        <li>Kampala, Uganda</li>
+                        <li>Email: computing@bugema.ac.ug</li>
                         <li><a href="contact.html">Full Contact Details →</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Bugema University. All rights reserved. | Excellence in Service</p>
+                <p>&copy; 2026 Bugema University. Department of Computing and Informatics. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Mobile menu toggle
             const menuToggle = document.querySelector('.mobile-menu-toggle');
             const navLinks = document.querySelector('.nav-links');
-            
+
             if (menuToggle) {
                 menuToggle.addEventListener('click', () => {
                     const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
@@ -293,7 +459,7 @@
             // Navbar scroll behavior - add solid background when scrolled past hero
             const header = document.querySelector('header');
             const hero = document.querySelector('.hero');
-            
+
             function updateNavbar() {
                 if (!hero) return;
                 const heroBottom = hero.getBoundingClientRect().bottom;
@@ -303,13 +469,13 @@
                     header.classList.remove('scrolled');
                 }
             }
-            
+
             window.addEventListener('scroll', updateNavbar);
             updateNavbar();
 
             // Scroll to top button functionality
             const scrollToTopBtn = document.querySelector('.scroll-to-top');
-            
+
             function toggleScrollToTop() {
                 if (window.scrollY > 300) {
                     scrollToTopBtn.classList.add('visible');
@@ -317,9 +483,9 @@
                     scrollToTopBtn.classList.remove('visible');
                 }
             }
-            
+
             window.addEventListener('scroll', toggleScrollToTop);
-            
+
             if (scrollToTopBtn) {
                 scrollToTopBtn.addEventListener('click', () => {
                     window.scrollTo({
@@ -348,7 +514,7 @@
                         const progress = Math.min(elapsed / duration, 1);
                         const easeOutQuart = 1 - Math.pow(1 - progress, 4);
                         const current = Math.floor(easeOutQuart * target);
-                        
+
                         stat.textContent = current + suffix;
 
                         if (progress < 1) {
@@ -391,9 +557,11 @@
     </script>
 
     <button class="scroll-to-top" aria-label="Scroll to top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>
 </body>
+
 </html>

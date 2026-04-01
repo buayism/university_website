@@ -1,195 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meet the qualified faculty at Bugema University. View staff profiles with qualifications, research interests, publications, and contact information.">
-    <title>Staff - Bugema University</title>
+    <meta name="description"
+        content="Meet the qualified faculty at Bugema University Department of Computing and Informatics. View staff profiles with qualifications and research interests.">
+    <title>Staff - Computing and Informatics</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body class="staff-page">
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <header>
         <nav class="main-nav" role="navigation" aria-label="Main navigation">
             <div class="logo">
                 <img src="logo.png" alt="Bugema University Logo">
                 <div class="logo-text">
                     <h1>Bugema University</h1>
-                    <span>Excellence in Service</span>
+                    <span>Department of Computing & Informatics</span>
                 </div>
             </div>
             <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="departments.html">Departments</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="staff.html" class="active" aria-current="page">Staff</a></li>
                 <li><a href="research.html">Research</a></li>
+                <li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-content">
-        <section class="hero" role="banner">
+        <section class="hero staff-hero" role="banner">
             <div class="hero-content">
-                <h2>Our Faculty & Staff</h2>
-                <p>Meet our dedicated team of educators and researchers committed to academic excellence and student success.</p>
+                <div class="hero-left">
+                    <h2><span class="hero-title-our">Our</span><span class="hero-title-faculty">Faculty</span></h2>
+                    <div class="hero-buttons">
+                        <a href="#leadership-heading" class="btn btn-primary">LEADERSHIP</a>
+                        <a href="#faculty-heading" class="btn btn-outline-blue">ALL FACULTY</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <img src="icdl.jpg" alt="Department of Computing and Informatics faculty group photo">
+                </div>
             </div>
         </section>
 
         <section class="section" aria-labelledby="leadership-heading">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="leadership-heading">University Leadership</h2>
+                    <h2 id="leadership-heading">Department Leadership</h2>
                 </div>
                 <div class="profile-grid">
                     <article class="profile-card">
                         <div class="profile-image" aria-hidden="true">
-                            <img src="vice chancellor.jpg" alt="Prof. Patrick Manu - Vice Chancellor" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                            <img src="hod dept computing and informatics.jpeg"
+                                alt="Head of Department - Computing and Informatics"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
                         </div>
                         <div class="profile-content">
-                            <h3>Prof. Patrick Manu</h3>
-                            <p class="profile-title">Vice Chancellor</p>
+                            <h3>Dr. [Name]</h3>
+                            <p class="profile-title">Head of Department</p>
                             <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Educational Administration, MEd, BEd</li>
-                                <li><strong>Research Interests:</strong> Higher Education Leadership, Educational Policy, Institutional Development</li>
-                                <li><strong>Publications:</strong> 25+ peer-reviewed articles on education management</li>
-                                <li><strong>Contact:</strong> vc@bugema.ac.ug | +256 312 351 401</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="profile-card">
-                        <div class="profile-image" aria-hidden="true">
-                            <img src="dvc academics.png" alt="Prof. John K. Ssebuwufu - Deputy Vice Chancellor Academics" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
-                        </div>
-                        <div class="profile-content">
-                            <h3>Prof. John K. Ssebuwufu</h3>
-                            <p class="profile-title">Deputy Vice Chancellor - Academics</p>
-                            <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Business Administration, MBA, BBA</li>
-                                <li><strong>Research Interests:</strong> Strategic Management, Curriculum Innovation, Quality Assurance</li>
-                                <li><strong>Publications:</strong> Author of 3 books on business education in Africa</li>
-                                <li><strong>Contact:</strong> dvc.academic@bugema.ac.ug | +256 312 351 402</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="profile-card">
-                        <div class="profile-image" aria-hidden="true">
-                            <img src="dvc finance.png" alt="Dr. Sarah Namukose - Deputy Vice Chancellor Finance" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
-                        </div>
-                        <div class="profile-content">
-                            <h3>Dr. Sarah Namukose</h3>
-                            <p class="profile-title">Deputy Vice Chancellor - Finance</p>
-                            <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Public Administration, MPA, BPA</li>
-                                <li><strong>Research Interests:</strong> Public Sector Management, Institutional Governance, Human Resources</li>
-                                <li><strong>Publications:</strong> 15 journal articles on public administration</li>
-                                <li><strong>Contact:</strong> dvc.admin@bugema.ac.ug | +256 312 351 403</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-alt" aria-labelledby="deans-heading">
-            <div class="container">
-                <div class="section-header">
-                    <h2 id="deans-heading">School Deans</h2>
-                </div>
-                <div class="profile-grid">
-                    <article class="profile-card">
-                        <div class="profile-image" aria-hidden="true">
-                            <img src="dean business.jpeg" alt="Dr. Lubowa Martin - Dean of Business" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
-                        </div>
-                        <div class="profile-content">
-                            <h3>Dr. Lubowa Martin</h3>
-                            <p class="profile-title">Dean, School of Business</p>
-                            <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Finance, MBA (Accounting), BCom</li>
-                                <li><strong>Research Interests:</strong> Corporate Finance, Financial Markets, Investment Analysis</li>
-                                <li><strong>Publications:</strong> 18 articles on African financial markets</li>
-                                <li><strong>Contact:</strong> dean.business@bugema.ac.ug</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="profile-card">
-                        <div class="profile-image" aria-hidden="true">
-                            <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="profile-content">
-                            <h3>Dr. Nagwovuma Margret</h3>
-                            <p class="profile-title">Dean, School of Science and technology</p>
-                            <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Computer Science, MSc IT, BSc CS</li>
-                                <li><strong>Research Interests:</strong> Artificial Intelligence, Data Mining, Software Engineering</li>
-                                <li><strong>Publications:</strong> 20+ papers in AI and machine learning</li>
-                                <li><strong>Contact:</strong> dean.computing@bugema.ac.ug</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="profile-card">
-                        <div class="profile-image" aria-hidden="true">
-                            <img src="dean theology.jpeg" alt="Dr. Alexander Mwita - Dean of Theology" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
-                        </div>
-                        <div class="profile-content">
-                            <h3>Dr. Alexander Mwita</h3>
-                            <p class="profile-title">Dean, School of Theology</p>
-                            <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Chemistry, MSc, BSc</li>
-                                <li><strong>Research Interests:</strong> Environmental Chemistry, Natural Products, Green Chemistry</li>
-                                <li><strong>Publications:</strong> 30 research articles, 2 patents</li>
-                                <li><strong>Contact:</strong> dean.science@bugema.ac.ug</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="profile-card">
-                        <div class="profile-image" aria-hidden="true">
-                            <img src="dean social science.jpeg" alt="Dr. Clare Kyomuhendo - Dean of Social Sciences" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
-                        </div>
-                        <div class="profile-content">
-                            <h3>Dr. Clare Kyomuhendo</h3>
-                            <p class="profile-title">Dean, School of Social Sciences</p>
-                            <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Development Studies, MA, BA</li>
-                                <li><strong>Research Interests:</strong> Sustainable Development, Social Policy, Rural Development</li>
-                                <li><strong>Publications:</strong> 16 journal articles and policy papers</li>
-                                <li><strong>Contact:</strong> dean.social@bugema.ac.ug</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" aria-labelledby="hod-heading">
-            <div class="container">
-                <div class="section-header">
-                    <h2 id="hod-heading">Heads of Departments</h2>
-                </div>
-                <div class="profile-grid">
-                    <article class="profile-card">
-                        <div class="profile-image" aria-hidden="true">
-                            <img src="hod dept computing and informatics.jpeg" alt="Emma Ssewankambo - Head of Computing and Informatics" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
-                        </div>
-                        <div class="profile-content">
-                            <h3>Emma Ssewankambo</h3>
-                            <p class="profile-title">Head of Department, Computing and Informatics</p>
-                            <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Information Systems, MSc, BSc</li>
-                                <li><strong>Research Interests:</strong> Information Security, Blockchain Technology, E-Governance</li>
-                                <li><strong>Publications:</strong> 19 articles on cybersecurity</li>
+                                <li><strong>Qualifications:</strong> PhD in Computer Science, MSc, BSc</li>
+                                <li><strong>Research Interests:</strong> Artificial Intelligence, Machine Learning, Data
+                                    Science</li>
+                                <li><strong>Publications:</strong> 25+ peer-reviewed articles on AI and computing</li>
                                 <li><strong>Contact:</strong> hod.computing@bugema.ac.ug</li>
                             </ul>
                         </div>
@@ -197,80 +78,170 @@
 
                     <article class="profile-card">
                         <div class="profile-image" aria-hidden="true">
-                            <img src="hod life and physical sciences.jpeg" alt="Kasibe Isma Isaiah - Head of Life and Physical Sciences" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                            <img src="hod dept computing and informatics.jpeg" alt="Deputy Head of Department"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
                         </div>
                         <div class="profile-content">
-                            <h3>Kasibe Isma Isaiah</h3>
-                            <p class="profile-title">Head of Department, Life and Physical Sciences</p>
+                            <h3>Dr. [Name]</h3>
+                            <p class="profile-title">Deputy Head - Academics</p>
                             <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Chemistry, MSc, BSc</li>
-                                <li><strong>Research Interests:</strong> Environmental Chemistry, Natural Products, Green Chemistry</li>
-                                <li><strong>Publications:</strong> 30 research articles, 2 patents</li>
-                                <li><strong>Contact:</strong> hod.lifesciences@bugema.ac.ug</li>
+                                <li><strong>Qualifications:</strong> PhD in Software Engineering, MSc, BSc</li>
+                                <li><strong>Research Interests:</strong> Software Quality, Agile Development, DevOps
+                                </li>
+                                <li><strong>Publications:</strong> 15 journal articles on software engineering</li>
+                                <li><strong>Contact:</strong> deputy.hod@bugema.ac.ug</li>
                             </ul>
                         </div>
                     </article>
 
                     <article class="profile-card">
                         <div class="profile-image" aria-hidden="true">
-                            <img src="hod social sciences.jpeg" alt="Dr. Pricille Kankindi - Head of Social Sciences" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                            <img src="hod dept computing and informatics.jpeg" alt="Head of Research"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
                         </div>
                         <div class="profile-content">
-                            <h3>Dr. Pricille Kankindi</h3>
-                            <p class="profile-title">Head of Department, Social Sciences</p>
+                            <h3>Prof. [Name]</h3>
+                            <p class="profile-title">Head of Research</p>
                             <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Development Studies, MA, BA</li>
-                                <li><strong>Research Interests:</strong> Sustainable Development, Social Policy, Rural Development</li>
-                                <li><strong>Publications:</strong> 16 journal articles and policy papers</li>
-                                <li><strong>Contact:</strong> hod.social@bugema.ac.ug</li>
+                                <li><strong>Qualifications:</strong> PhD in Information Systems, MSc, BSc</li>
+                                <li><strong>Research Interests:</strong> Cybersecurity, Information Security, Blockchain
+                                </li>
+                                <li><strong>Publications:</strong> 20 research articles on cybersecurity</li>
+                                <li><strong>Contact:</strong> research.head@bugema.ac.ug</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" aria-labelledby="faculty-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="faculty-heading">Computing Faculty</h2>
+                </div>
+                <div class="profile-grid">
+                    <article class="profile-card">
+                        <div class="profile-image" aria-hidden="true">
+                            <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="profile-content">
+                            <h3>Dr. [Name]</h3>
+                            <p class="profile-title">Senior Lecturer - Computer Science</p>
+                            <ul class="profile-details">
+                                <li><strong>Qualifications:</strong> PhD in Computer Science, MSc, BSc</li>
+                                <li><strong>Research Interests:</strong> Algorithms, Distributed Systems, Cloud
+                                    Computing</li>
+                                <li><strong>Publications:</strong> 12 articles on distributed computing</li>
+                                <li><strong>Contact:</strong> [email]@bugema.ac.ug</li>
                             </ul>
                         </div>
                     </article>
 
                     <article class="profile-card">
                         <div class="profile-image" aria-hidden="true">
-                            <img src="hod developmental sciences.jpeg" alt="Masereka Robinson - Head of Developmental Studies" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                            <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
                         </div>
                         <div class="profile-content">
-                            <h3>Masereka Robinson</h3>
-                            <p class="profile-title">Head of Department, Developmental Studies</p>
+                            <h3>Dr. [Name]</h3>
+                            <p class="profile-title">Lecturer - Software Engineering</p>
                             <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Development Studies, MA, BA</li>
-                                <li><strong>Research Interests:</strong> Community Development, Economic Development, Poverty Reduction</li>
-                                <li><strong>Publications:</strong> 14 articles on African development</li>
-                                <li><strong>Contact:</strong> hod.development@bugema.ac.ug</li>
+                                <li><strong>Qualifications:</strong> PhD in Software Engineering, MSc, BSc</li>
+                                <li><strong>Research Interests:</strong> Web Development, Mobile Apps, UX Design</li>
+                                <li><strong>Publications:</strong> 8 papers on software development practices</li>
+                                <li><strong>Contact:</strong> [email]@bugema.ac.ug</li>
                             </ul>
                         </div>
                     </article>
 
                     <article class="profile-card">
                         <div class="profile-image" aria-hidden="true">
-                            <img src="hod education arts.jpeg" alt="hafashimana Samuel - Head of Education Arts" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                            <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
                         </div>
                         <div class="profile-content">
-                            <h3>hafashimana Samuel</h3>
-                            <p class="profile-title">Head of Department, Education Arts</p>
+                            <h3>Mr. [Name]</h3>
+                            <p class="profile-title">Lecturer - Information Technology</p>
                             <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Educational Psychology, MEd, BEd</li>
-                                <li><strong>Research Interests:</strong> Learning Psychology, Teacher Education, Curriculum Design</li>
-                                <li><strong>Publications:</strong> 28 articles, 3 textbooks</li>
-                                <li><strong>Contact:</strong> hod.educationarts@bugema.ac.ug</li>
+                                <li><strong>Qualifications:</strong> MSc in Information Technology, BSc</li>
+                                <li><strong>Research Interests:</strong> Network Administration, System Security, Cloud
+                                    Infrastructure</li>
+                                <li><strong>Certifications:</strong> CCNA, CompTIA Security+</li>
+                                <li><strong>Contact:</strong> [email]@bugema.ac.ug</li>
                             </ul>
                         </div>
                     </article>
 
                     <article class="profile-card">
                         <div class="profile-image" aria-hidden="true">
-                            <img src="hod science education.jpeg" alt="Mr. Magoola Abel - Head of Science Education" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.5rem;">
+                            <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
                         </div>
                         <div class="profile-content">
-                            <h3>Mr. Magoola Abel</h3>
-                            <p class="profile-title">Head of Department, Science Education</p>
+                            <h3>Dr. [Name]</h3>
+                            <p class="profile-title">Lecturer - Data Science</p>
                             <ul class="profile-details">
-                                <li><strong>Qualifications:</strong> PhD in Curriculum Studies, MEd, BEd</li>
-                                <li><strong>Research Interests:</strong> Science Education, STEM Teaching Methods, Educational Technology</li>
-                                <li><strong>Publications:</strong> 12 books and book chapters on science education</li>
-                                <li><strong>Contact:</strong> hod.scienceed@bugema.ac.ug</li>
+                                <li><strong>Qualifications:</strong> PhD in Data Science, MSc, BSc</li>
+                                <li><strong>Research Interests:</strong> Machine Learning, Big Data Analytics, Data
+                                    Visualization</li>
+                                <li><strong>Publications:</strong> 10 articles on machine learning applications</li>
+                                <li><strong>Contact:</strong> [email]@bugema.ac.ug</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="profile-card">
+                        <div class="profile-image" aria-hidden="true">
+                            <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="profile-content">
+                            <h3>Mr. [Name]</h3>
+                            <p class="profile-title">Lecturer - Cybersecurity</p>
+                            <ul class="profile-details">
+                                <li><strong>Qualifications:</strong> MSc in Cybersecurity, BSc</li>
+                                <li><strong>Research Interests:</strong> Ethical Hacking, Digital Forensics, Security
+                                    Analysis</li>
+                                <li><strong>Certifications:</strong> CEH, CISSP</li>
+                                <li><strong>Contact:</strong> [email]@bugema.ac.ug</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="profile-card">
+                        <div class="profile-image" aria-hidden="true">
+                            <svg class="icon icon-xl icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="profile-content">
+                            <h3>Mrs. [Name]</h3>
+                            <p class="profile-title">Assistant Lecturer - Programming</p>
+                            <ul class="profile-details">
+                                <li><strong>Qualifications:</strong> MSc in Computer Science, BSc</li>
+                                <li><strong>Research Interests:</strong> Programming Languages, Code Quality, Software
+                                    Testing</li>
+                                <li><strong>Courses:</strong> Java, Python, C++, Web Programming</li>
+                                <li><strong>Contact:</strong> [email]@bugema.ac.ug</li>
                             </ul>
                         </div>
                     </article>
@@ -286,32 +257,33 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="departments.html">Departments</a></li>
                         <li><a href="programs.html">Programs</a></li>
                         <li><a href="staff.html">Staff</a></li>
+                        <li><a href="research.html">Research</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="research.html">Research</a></li>
                         <li><a href="news.html">News & Events</a></li>
-                        <li><a href="#">Library</a></li>
                         <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">E-Learning</a></li>
+                        <li><a href="#">Library</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <ul>
-                        <li>P.O. Box 6529, Kampala, Uganda</li>
-                        <li>Email: info@bugema.ac.ug</li>
-                        <li>Phone: +256 312 351 400</li>
+                        <li>Department of Computing and Informatics</li>
+                        <li>Bugema University, P.O. Box 6529</li>
+                        <li>Kampala, Uganda</li>
+                        <li>Email: computing@bugema.ac.ug</li>
                         <li><a href="contact.html">Full Contact Details →</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Bugema University. All rights reserved. | Excellence in Service</p>
+                <p>&copy; 2026 Bugema University. Department of Computing and Informatics. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -319,7 +291,7 @@
     <script>
         const menuToggle = document.querySelector('.mobile-menu-toggle');
         const navLinks = document.querySelector('.nav-links');
-        
+
         menuToggle.addEventListener('click', () => {
             const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
             menuToggle.setAttribute('aria-expanded', !isExpanded);
@@ -329,7 +301,7 @@
         // Navbar scroll behavior - add solid background when scrolled past hero
         const header = document.querySelector('header');
         const hero = document.querySelector('.hero');
-        
+
         function updateNavbar() {
             const heroBottom = hero.getBoundingClientRect().bottom;
             if (heroBottom <= 0) {
@@ -338,14 +310,14 @@
                 header.classList.remove('scrolled');
             }
         }
-        
+
         window.addEventListener('scroll', updateNavbar);
         // Initial check
         updateNavbar();
 
         // Scroll to top button functionality
         const scrollToTopBtn = document.querySelector('.scroll-to-top');
-        
+
         function toggleScrollToTop() {
             if (window.scrollY > 300) {
                 scrollToTopBtn.classList.add('visible');
@@ -353,9 +325,9 @@
                 scrollToTopBtn.classList.remove('visible');
             }
         }
-        
+
         window.addEventListener('scroll', toggleScrollToTop);
-        
+
         scrollToTopBtn.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -365,9 +337,11 @@
     </script>
 
     <button class="scroll-to-top" aria-label="Scroll to top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>
 </body>
+
 </html>

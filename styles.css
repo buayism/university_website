@@ -57,14 +57,16 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    position: relative;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
     margin-right: auto;
-    padding-left: 20px; /* ADJUST THIS VALUE to push logo left */
+    padding-left: 20px;
+    /* ADJUST THIS VALUE to push logo left */
 }
 
 .logo img {
@@ -435,7 +437,7 @@ header {
 /* Cards */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -500,7 +502,7 @@ header {
 /* Quick Links Section */
 .quick-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -945,6 +947,29 @@ footer {
         display: block;
     }
 
+    /* Navbar: shrink logo to fit on small screens */
+    .main-nav {
+        height: 70px;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        padding-left: 0;
+        gap: 0.5rem;
+    }
+
+    .logo img {
+        height: 44px;
+    }
+
+    .logo-text h1 {
+        font-size: 1.1rem;
+    }
+
+    .logo-text span {
+        font-size: 0.75rem;
+    }
+
     .nav-links {
         display: none;
         position: absolute;
@@ -956,6 +981,7 @@ footer {
         padding: 1rem;
         gap: 0;
         box-shadow: var(--shadow);
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -963,17 +989,17 @@ footer {
     }
 
     .nav-links a {
-        padding: 1rem;
+        padding: 0.85rem 1rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .hero-content {
         flex-direction: column;
-        padding: 6rem 0 3rem;
+        padding: 5rem 1.25rem 2.5rem;
         text-align: center;
     }
 
-    /* Preserve padding for page-specific heroes */
+    /* Correct padding for page-specific heroes (accounts for 70px fixed navbar) */
     .programs-hero .hero-content,
     .news-hero .hero-content,
     .staff-hero .hero-content,
@@ -981,7 +1007,7 @@ footer {
     .contact-hero .hero-content,
     .home-hero .hero-content,
     .research-hero .hero-content {
-        padding: 60px 40px;
+        padding: 90px 20px 40px;
     }
 
     .hero-text {
@@ -1020,6 +1046,10 @@ footer {
 
     .section-header h2 {
         font-size: 1.75rem;
+    }
+
+    .section {
+        padding: 2.5rem 0;
     }
 
     .news-item {
@@ -1572,11 +1602,11 @@ select:focus-visible {
         padding: 60px 60px;
         gap: 60px;
     }
-    
+
     .staff-hero .hero-title-our {
         font-size: 55px;
     }
-    
+
     .staff-hero .hero-title-faculty {
         font-size: 80px;
     }
@@ -1585,22 +1615,45 @@ select:focus-visible {
 @media (max-width: 992px) {
     .staff-hero .hero-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 60px 40px;
+        gap: 30px;
+        padding: 60px 20px;
         text-align: center;
     }
-    
+
     .staff-hero .hero-left {
         align-items: center;
     }
-    
+
     .staff-hero .hero-right {
         justify-content: center;
     }
-    
+
     .staff-hero .hero-right img {
         max-width: 100%;
         border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .staff-hero .hero-title-our {
+        font-size: 28px;
+    }
+
+    .staff-hero .hero-title-faculty {
+        font-size: 42px;
+    }
+
+    .staff-hero .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .staff-hero .hero-buttons .btn-primary,
+    .staff-hero .hero-buttons .btn-outline,
+    .staff-hero .hero-buttons .btn-outline-blue {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -1723,11 +1776,11 @@ select:focus-visible {
         padding: 60px 60px;
         gap: 60px;
     }
-    
+
     .about-hero .hero-title-about {
         font-size: 55px;
     }
-    
+
     .about-hero .hero-title-dept {
         font-size: 80px;
     }
@@ -1736,19 +1789,19 @@ select:focus-visible {
 @media (max-width: 992px) {
     .about-hero .hero-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 60px 40px;
+        gap: 30px;
+        padding: 60px 20px;
         text-align: center;
     }
-    
+
     .about-hero .hero-left {
         align-items: center;
     }
-    
+
     .about-hero .hero-right {
         justify-content: center;
     }
-    
+
     .about-hero .hero-right img {
         max-width: 100%;
         border-radius: 20px;
@@ -1757,18 +1810,19 @@ select:focus-visible {
 
 @media (max-width: 768px) {
     .about-hero .hero-title-about {
-        font-size: 45px;
+        font-size: 28px;
     }
-    
+
     .about-hero .hero-title-dept {
-        font-size: 60px;
+        font-size: 42px;
     }
-    
+
     .about-hero .hero-buttons {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
-    
+
     .about-hero .hero-buttons .btn-primary,
     .about-hero .hero-buttons .btn-outline {
         width: 100%;
@@ -1895,11 +1949,11 @@ select:focus-visible {
         padding: 60px 60px;
         gap: 60px;
     }
-    
+
     .news-hero .hero-title-news {
         font-size: 55px;
     }
-    
+
     .news-hero .hero-title-events {
         font-size: 80px;
     }
@@ -1912,15 +1966,15 @@ select:focus-visible {
         padding: 60px 40px;
         text-align: center;
     }
-    
+
     .news-hero .hero-left {
         align-items: center;
     }
-    
+
     .news-hero .hero-right {
         justify-content: center;
     }
-    
+
     .news-hero .hero-right img {
         max-width: 100%;
         border-radius: 20px;
@@ -1931,16 +1985,16 @@ select:focus-visible {
     .news-hero .hero-title-news {
         font-size: 45px;
     }
-    
+
     .news-hero .hero-title-events {
         font-size: 60px;
     }
-    
+
     .news-hero .hero-buttons {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .news-hero .hero-buttons .btn-primary,
     .news-hero .hero-buttons .btn-outline {
         width: 100%;
@@ -2067,11 +2121,11 @@ select:focus-visible {
         padding: 60px 60px;
         gap: 60px;
     }
-    
+
     .contact-hero .hero-title-contact {
         font-size: 55px;
     }
-    
+
     .contact-hero .hero-title-us {
         font-size: 80px;
     }
@@ -2080,19 +2134,19 @@ select:focus-visible {
 @media (max-width: 992px) {
     .contact-hero .hero-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 60px 40px;
+        gap: 30px;
+        padding: 60px 20px;
         text-align: center;
     }
-    
+
     .contact-hero .hero-left {
         align-items: center;
     }
-    
+
     .contact-hero .hero-right {
         justify-content: center;
     }
-    
+
     .contact-hero .hero-right img {
         max-width: 100%;
         border-radius: 20px;
@@ -2101,18 +2155,19 @@ select:focus-visible {
 
 @media (max-width: 768px) {
     .contact-hero .hero-title-contact {
-        font-size: 45px;
+        font-size: 28px;
     }
-    
+
     .contact-hero .hero-title-us {
-        font-size: 60px;
+        font-size: 42px;
     }
-    
+
     .contact-hero .hero-buttons {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
-    
+
     .contact-hero .hero-buttons .btn-primary,
     .contact-hero .hero-buttons .btn-outline-blue {
         width: 100%;
@@ -2239,11 +2294,11 @@ select:focus-visible {
         padding: 60px 60px;
         gap: 60px;
     }
-    
+
     .programs-hero .hero-title-computing {
         font-size: 55px;
     }
-    
+
     .programs-hero .hero-title-programs {
         font-size: 80px;
     }
@@ -2252,19 +2307,19 @@ select:focus-visible {
 @media (max-width: 992px) {
     .programs-hero .hero-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 60px 40px;
+        gap: 30px;
+        padding: 60px 20px;
         text-align: center;
     }
-    
+
     .programs-hero .hero-left {
         align-items: center;
     }
-    
+
     .programs-hero .hero-right {
         justify-content: center;
     }
-    
+
     .programs-hero .hero-right img {
         max-width: 100%;
         border-radius: 20px;
@@ -2273,18 +2328,19 @@ select:focus-visible {
 
 @media (max-width: 768px) {
     .programs-hero .hero-title-computing {
-        font-size: 45px;
+        font-size: 28px;
     }
-    
+
     .programs-hero .hero-title-programs {
-        font-size: 60px;
+        font-size: 42px;
     }
-    
+
     .programs-hero .hero-buttons {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
-    
+
     .programs-hero .hero-buttons .btn-primary,
     .programs-hero .hero-buttons .btn-outline {
         width: 100%;
@@ -2411,11 +2467,11 @@ select:focus-visible {
         padding: 60px 60px;
         gap: 60px;
     }
-    
+
     .home-hero .hero-title-welcome {
         font-size: 55px;
     }
-    
+
     .home-hero .hero-title-dept {
         font-size: 80px;
     }
@@ -2424,19 +2480,19 @@ select:focus-visible {
 @media (max-width: 992px) {
     .home-hero .hero-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 60px 40px;
+        gap: 30px;
+        padding: 60px 20px;
         text-align: center;
     }
-    
+
     .home-hero .hero-left {
         align-items: center;
     }
-    
+
     .home-hero .hero-right {
         justify-content: center;
     }
-    
+
     .home-hero .hero-right img {
         max-width: 100%;
         border-radius: 20px;
@@ -2445,18 +2501,19 @@ select:focus-visible {
 
 @media (max-width: 768px) {
     .home-hero .hero-title-welcome {
-        font-size: 45px;
+        font-size: 28px;
     }
-    
+
     .home-hero .hero-title-dept {
-        font-size: 60px;
+        font-size: 42px;
     }
-    
+
     .home-hero .hero-buttons {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
-    
+
     .home-hero .hero-buttons .btn-primary,
     .home-hero .hero-buttons .btn-outline {
         width: 100%;
@@ -2583,11 +2640,11 @@ select:focus-visible {
         padding: 60px 60px;
         gap: 60px;
     }
-    
+
     .research-hero .hero-title-research {
         font-size: 55px;
     }
-    
+
     .research-hero .hero-title-innovation {
         font-size: 80px;
     }
@@ -2596,19 +2653,19 @@ select:focus-visible {
 @media (max-width: 992px) {
     .research-hero .hero-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 60px 40px;
+        gap: 30px;
+        padding: 60px 20px;
         text-align: center;
     }
-    
+
     .research-hero .hero-left {
         align-items: center;
     }
-    
+
     .research-hero .hero-right {
         justify-content: center;
     }
-    
+
     .research-hero .hero-right img {
         max-width: 100%;
         border-radius: 20px;
@@ -2617,18 +2674,19 @@ select:focus-visible {
 
 @media (max-width: 768px) {
     .research-hero .hero-title-research {
-        font-size: 45px;
+        font-size: 28px;
     }
-    
+
     .research-hero .hero-title-innovation {
-        font-size: 60px;
+        font-size: 42px;
     }
-    
+
     .research-hero .hero-buttons {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
-    
+
     .research-hero .hero-buttons .btn-primary,
     .research-hero .hero-buttons .btn-outline {
         width: 100%;
@@ -2755,11 +2813,11 @@ select:focus-visible {
         padding: 60px 60px;
         gap: 60px;
     }
-    
+
     .news-hero .hero-title-news {
         font-size: 55px;
     }
-    
+
     .news-hero .hero-title-events {
         font-size: 80px;
     }
@@ -2768,19 +2826,19 @@ select:focus-visible {
 @media (max-width: 992px) {
     .news-hero .hero-content {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 60px 40px;
+        gap: 30px;
+        padding: 60px 20px;
         text-align: center;
     }
-    
+
     .news-hero .hero-left {
         align-items: center;
     }
-    
+
     .news-hero .hero-right {
         justify-content: center;
     }
-    
+
     .news-hero .hero-right img {
         max-width: 100%;
         border-radius: 20px;
@@ -2789,18 +2847,19 @@ select:focus-visible {
 
 @media (max-width: 768px) {
     .news-hero .hero-title-news {
-        font-size: 45px;
+        font-size: 28px;
     }
-    
+
     .news-hero .hero-title-events {
-        font-size: 60px;
+        font-size: 42px;
     }
-    
+
     .news-hero .hero-buttons {
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
-    
+
     .news-hero .hero-buttons .btn-primary,
     .news-hero .hero-buttons .btn-outline {
         width: 100%;
@@ -2821,5 +2880,181 @@ select:focus-visible {
 
     .hero-right {
         justify-content: center;
+    }
+}
+
+/* ============================================================
+   Small phone breakpoint (max 480px — e.g. iPhone SE, older Android)
+   ============================================================ */
+@media (max-width: 480px) {
+
+    /* Navbar */
+    .main-nav {
+        height: 64px;
+    }
+
+    .logo img {
+        height: 38px;
+    }
+
+    .logo-text h1 {
+        font-size: 1rem;
+    }
+
+    .logo-text span {
+        font-size: 0.7rem;
+    }
+
+    /* Section spacing */
+    .section {
+        padding: 2rem 0;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
+    }
+
+    /* Hero common: extra tight at very small sizes, stacking vertically */
+    .home-hero .hero-content,
+    .about-hero .hero-content,
+    .staff-hero .hero-content,
+    .programs-hero .hero-content,
+    .research-hero .hero-content,
+    .news-hero .hero-content,
+    .contact-hero .hero-content {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 16px 32px;
+        gap: 0;
+    }
+
+    /* Unbox the left content to participate in flex order */
+    .home-hero .hero-left,
+    .about-hero .hero-left,
+    .staff-hero .hero-left,
+    .programs-hero .hero-left,
+    .research-hero .hero-left,
+    .news-hero .hero-left,
+    .contact-hero .hero-left {
+        display: contents;
+    }
+
+    /* 1. Title comes first */
+    .home-hero h2,
+    .about-hero h2,
+    .staff-hero h2,
+    .programs-hero h2,
+    .research-hero h2,
+    .news-hero h2,
+    .contact-hero h2 {
+        order: 1;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 2. Image comes second (below text) */
+    /* Show the hero right-panel images on very small phones, stack them */
+    .home-hero .hero-right,
+    .about-hero .hero-right,
+    .staff-hero .hero-right,
+    .programs-hero .hero-right,
+    .research-hero .hero-right,
+    .news-hero .hero-right,
+    .contact-hero .hero-right {
+        display: flex;
+        order: 2;
+        margin-bottom: 24px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-hero .hero-right img,
+    .about-hero .hero-right img,
+    .staff-hero .hero-right img,
+    .programs-hero .hero-right img,
+    .research-hero .hero-right img,
+    .news-hero .hero-right img,
+    .contact-hero .hero-right img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* 3. Buttons come last */
+    .home-hero .hero-buttons,
+    .about-hero .hero-buttons,
+    .staff-hero .hero-buttons,
+    .programs-hero .hero-buttons,
+    .research-hero .hero-buttons,
+    .news-hero .hero-buttons,
+    .contact-hero .hero-buttons {
+        order: 3;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    /* Hero title font sizes — small phone */
+    .home-hero .hero-title-welcome,
+    .about-hero .hero-title-about,
+    .staff-hero .hero-title-our,
+    .programs-hero .hero-title-computing,
+    .research-hero .hero-title-research,
+    .news-hero .hero-title-news,
+    .contact-hero .hero-title-contact {
+        font-size: 24px;
+    }
+
+    .home-hero .hero-title-dept,
+    .about-hero .hero-title-dept,
+    .staff-hero .hero-title-faculty,
+    .programs-hero .hero-title-programs,
+    .research-hero .hero-title-innovation,
+    .news-hero .hero-title-events,
+    .contact-hero .hero-title-us {
+        font-size: 36px;
+    }
+
+    /* Buttons */
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-outline,
+    .home-hero .hero-buttons .btn-primary,
+    .home-hero .hero-buttons .btn-outline,
+    .about-hero .hero-buttons .btn-primary,
+    .about-hero .hero-buttons .btn-outline,
+    .staff-hero .hero-buttons .btn-primary,
+    .staff-hero .hero-buttons .btn-outline,
+    .programs-hero .hero-buttons .btn-primary,
+    .programs-hero .hero-buttons .btn-outline,
+    .research-hero .hero-buttons .btn-primary,
+    .research-hero .hero-buttons .btn-outline,
+    .news-hero .hero-buttons .btn-primary,
+    .news-hero .hero-buttons .btn-outline,
+    .contact-hero .hero-buttons .btn-primary,
+    .contact-hero .hero-buttons .btn-outline-blue {
+        padding: 12px 20px;
+        font-size: 0.7rem;
+    }
+
+    /* Cards go fully single column */
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats grid */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    .footer-section {
+        text-align: center;
     }
 }

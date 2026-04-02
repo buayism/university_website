@@ -38,6 +38,9 @@
                 <li><a href="research.html" class="active" aria-current="page">Research</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://erms.bugemauniv.ac.ug/student" target="_blank" class="btn btn-primary"
+                        style="padding: 6px 16px; margin-left: 10px; font-weight: bold; border-radius: 4px;">Portal</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -46,7 +49,8 @@
         <section class="hero research-hero" role="banner">
             <div class="hero-content">
                 <div class="hero-left">
-                    <h2><span class="hero-title-research">Research &</span><span class="hero-title-innovation">Innovation</span></h2>
+                    <h2><span class="hero-title-research">Research &</span><span
+                            class="hero-title-innovation">Innovation</span></h2>
                     <div class="hero-buttons">
                         <a href="#projects-heading" class="btn btn-primary">OUR PROJECTS</a>
                         <a href="#collaboration-heading" class="btn btn-outline">COLLABORATE</a>
@@ -425,9 +429,8 @@
                     <h4>Resources</h4>
                     <ul>
                         <li><a href="news.html">News & Events</a></li>
-                        <li><a href="#">Student Portal</a></li>
-                        <li><a href="#">E-Learning</a></li>
-                        <li><a href="#">Library</a></li>
+                        <li><a href="https://erms.bugemauniv.ac.ug/student" target="_blank">Student Portal</a></li>
+                        <li><a href="https://elearning.bugemauniv.ac.ug" target="_blank">E-Learning</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -436,7 +439,7 @@
                         <li>Department of Computing and Informatics</li>
                         <li>Bugema University, P.O. Box 6529</li>
                         <li>Kampala, Uganda</li>
-                        <li>Email: computing@bugema.ac.ug</li>
+                        <li>Email: <a href="mailto:computing@bugema.ac.ug">computing@bugema.ac.ug</a></li>
                         <li><a href="contact.html">Full Contact Details →</a></li>
                     </ul>
                 </div>
@@ -501,6 +504,35 @@
             <polyline points="18 15 12 9 6 15"></polyline>
         </svg>
     </button>
+    <!-- Mobile Menu Extensions (Close button & Click outside) -->
+    <script>
+        (function () {
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('.nav-links');
+            if (!nav) return;
+
+            const closeBtn = document.createElement('button');
+            closeBtn.innerHTML = '&times;';
+            closeBtn.className = 'close-menu-btn';
+            closeBtn.setAttribute('aria-label', 'Close menu');
+            nav.insertBefore(closeBtn, nav.firstChild);
+
+            function closeNav() {
+                nav.classList.remove('active');
+                if (toggle) toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            closeBtn.addEventListener('click', closeNav);
+
+            document.addEventListener('click', function (e) {
+                if (nav.classList.contains('active')) {
+                    if (!nav.contains(e.target) && (!toggle || !toggle.contains(e.target))) {
+                        closeNav();
+                    }
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>
